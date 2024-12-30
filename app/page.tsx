@@ -4,9 +4,14 @@ export default function Home() {
     return (
         <div>
             <div className="relative min-h-[800px] bg-[#e1cdc7]">
-                {/* Background image container with blur effect */}
+                {/* Background image container with conditional blur effect */}
                 <div className="absolute top-0 right-0 w-full sm:w-1/2 h-full overflow-hidden">
-                    <div className="absolute inset-0 w-full h-full" style={{
+                    <div className="absolute inset-0 w-full h-full block sm:hidden" style={{
+                        backgroundImage: 'url(/sea4.png)',
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                    }}/>
+                    <div className="absolute inset-0 w-full h-full hidden sm:block" style={{
                         backgroundImage: 'url(/sea4.png)',
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
