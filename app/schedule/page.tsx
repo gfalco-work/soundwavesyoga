@@ -81,8 +81,8 @@ export default function Schedule() {
             </div>
 
             {/* Image Section */}
-            <div className="w-full lg:w-1/2 mt-8 lg:mt-0 px-4 lg:px-0 flex items-center justify-center">
-                <div className="w-full lg:w-[90%] aspect-square lg:aspect-auto lg:h-[90%] relative" style={{transform: 'translateY(-80px)'}}>
+            <div className="w-full lg:w-1/2 mt-20 lg:mt-0 px-4 lg:px-0 flex items-center justify-center">
+                <div className="w-full lg:w-[90%] aspect-square lg:aspect-auto lg:h-[90%] relative" style={{transform: 'translateY(-90px)'}}>
                     <img
                         src="/schedule.png"
                         alt="Yoga Schedule"
