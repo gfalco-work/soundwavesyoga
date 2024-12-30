@@ -10,7 +10,7 @@ export default function AboutPage() {
                     <div className="w-full lg:w-1/3 flex justify-center">
                         <div className="w-85">
                             <img
-                                src="/michelle_fondachello.jpg"
+                                src="/teacher_aboutme.jpg"
                                 alt="Yoga Teacher"
                                 className="rounded-lg shadow-md w-full object-contain"
                             />

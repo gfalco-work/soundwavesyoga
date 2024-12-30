@@ -9,7 +9,7 @@ export default function Home() {
                     <div
                         className="absolute inset-0 w-full h-full block sm:hidden"
                         style={{
-                            backgroundImage: "url(/sea4.png)",
+                            backgroundImage: "url(/sea_homepage.png)",
                             backgroundSize: "cover",
                             backgroundPosition: "center",
                         }}
@@ -17,7 +17,7 @@ export default function Home() {
                     <div
                         className="absolute inset-0 w-full h-full hidden sm:block"
                         style={{
-                            backgroundImage: "url(/sea4.png)",
+                            backgroundImage: "url(/sea_homepage.png)",
                             backgroundSize: "cover",
                             backgroundPosition: "center",
                             mask: "linear-gradient(to right, transparent, black 20%)", // Increased transparency area

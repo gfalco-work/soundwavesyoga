@@ -31,12 +31,6 @@ export default function ContactPage() {
 
     return (
         <div className="relative min-h-screen">
-            {/* Background Image */}
-            <div
-                className="absolute inset-0 bg-cover bg-center z-0"
-                style={{ backgroundImage: 'url("/sea1.png")' }} // Path to the image in the public folder
-            ></div>
-
             {/* Form Content */}
             <div className="relative z-10 min-h-screen bg-[#f7f2ed] py-12">
                 <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-8">
