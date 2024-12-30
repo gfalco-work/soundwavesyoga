@@ -40,9 +40,9 @@ export default function ContactPage() {
             {/* Form Content */}
             <div className="relative z-10 min-h-screen bg-[#f7f2ed] py-12">
                 <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-8">
-                    <h1 className="text-4xl font-bold text-[#33484d] text-center mb-6">Contact Us</h1>
+                    <h1 className="text-4xl font-bold text-[#33484d] text-center mb-6">Contact Me</h1>
                     <p className="text-lg text-center text-[#33484d] mb-8">
-                        We’d love to hear from you! Please fill out the form below and we’ll get back to you as soon as possible.
+                        I would love to hear from you! Please fill out the form below and I will get back to you as soon as possible.
                     </p>
 
                     {/* Form */}
