@@ -38,7 +38,7 @@ export default function ContactPage() {
             ></div>
 
             {/* Form Content */}
-            <div className="relative z-10 min-h-screen bg-[#e1cdc7] py-12">
+            <div className="relative z-10 min-h-screen bg-[#f7f2ed] py-12">
                 <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-8">
                     <h1 className="text-4xl font-bold text-[#33484d] text-center mb-6">Contact Us</h1>
                     <p className="text-lg text-center text-[#33484d] mb-8">

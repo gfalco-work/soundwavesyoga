@@ -8,7 +8,7 @@ export default function AboutPage() {
             className="min-h-screen bg-cover bg-center py-12"
             style={{ backgroundImage: 'url("/aboutme.png")' }} // Replace with your background image path
         >
-            <div className="max-w-6xl mx-auto bg-white shadow-lg rounded-lg p-8">
+            <div className="max-w-6xl mx-auto bg-[#f7f2ed] shadow-lg rounded-lg p-8">
                 <h1 className="text-4xl font-bold text-[#33484d] text-center mb-6">
                     About Me
                 </h1>
@@ -27,30 +27,26 @@ export default function AboutPage() {
                     {/* Right Section: Text */}
                     <div className="flex-1 text-[#33484d] text-lg sm:text-xl leading-relaxed">
                         <p className="mb-6 text-center sm:text-left">
-                            I am motivated by working with busy souls who know they need rest but struggle to find it.
-                            As both a yoga teacher and psychotherapist, I have discovered that amazing things can happen
-                            when we allow, or even risk, deep rest. For some of us, taking rest requires time and practice
-                            in an environment that communicates care and welcomes the pace we each need to move at.
+                            I work with busy souls who know they need rest but struggle to find it.
+                            Having trained in both yoga and psychotherapy, I have witnessed remarkable
+                            transformations when people allow themselves to experience deep rest.
+                            Finding this often requires time and practice in an environment that communicates care and honours our individual pace.
                         </p>
 
                         <p className="mb-6 text-center sm:text-left">
-                            I am fascinated by the connection between our nervous systems and our capacity for rest and
-                            restoration. Through my own challenges with settling and replenishing, I have developed practical
-                            tools and understanding that I now share with others.
+                            My fascination with the connection between our nervous systems and our capacity for restoration stems from personal experience.
+                            Through my own challenges with settling and replenishing, I have developed practical tools that I now share with others.
                         </p>
 
                         <p className="mb-6 text-center sm:text-left">
-                            My approach weaves together the wisdom of multiple disciplines I am grateful to have navigated:
-                            psychoanalysis, somatic experiencing, sound, and yoga. I remain a perpetual student, constantly
-                            expanding my knowledge through ongoing research, study, and practice. This commitment to growth
-                            allows me to bring fresh insights to every session.
+                            My approach weaves together wisdom from psychoanalysis, somatic experiencing, sound, and yoga.
+                            As a perpetual student, I continuously expand my knowledge through research and practice, bringing fresh insights to every session.
                         </p>
 
                         <p className="mb-6 text-center sm:text-left">
-                            My aim is to create nurturing spaces where you can explore rest without the pressure of needing
-                            to perform. Drawing from extensive study of stress, trauma, and the mind-body connection, my
-                            offerings aim to meet you exactly where you are. Whether you're taking your first steps toward
-                            slowing down or deepening your existing practice, make an inquiry to see if this is the place for you.
+                            I create nurturing spaces where you can explore rest without pressure to perform. Drawing from extensive study of stress,
+                            trauma, and the mind-body connection, I meet you exactly where you are. Whether you arre taking your first steps toward slowing
+                            down or deepening your existing practice, reach out to see if this feels right for you.
                         </p>
                     </div>
                 </div>
