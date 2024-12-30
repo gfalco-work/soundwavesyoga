@@ -21,17 +21,38 @@ export default function Home() {
                 </div>
 
                 {/* Content container */}
-                <div className="relative max-w-8xl mx-auto px-6 sm:px-12 py-20 sm:py-32">
-                    {/* Left text container */}
-                    <div className="w-full sm:w-1/2 text-[#102434] flex flex-col justify-center sm:justify-start sm:pt-32 items-center sm:items-start">
-                        <h1 className="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 leading-snug text-center sm:text-left">
-                            Helping you to find rest in a restless world through movement, rest and sound.
-                        </h1>
-                        <p className="text-lg sm:text-2xl leading-snug text-center sm:text-left">
-                            Whether you're new to yoga or seeking a gentler practice, through a blend of movement, rest and sound, we'll explore ways
-                            to access deep rest that you can carry into your daily life. No forcing. No performance. Just the space to be exactly as
-                            you are.
-                        </p>
+                <div className="relative max-w-8xl mx-auto px-6 pt-20 sm:px-12 h-full">
+                    {/* Text container with responsive versions */}
+                    <div className="w-full sm:w-1/2 text-[#102434] h-full flex flex-col justify-center items-center">
+                        {/* Mobile version */}
+                        <div className="block sm:hidden text-center bg-[#e1cdc7]/80 p-6 rounded-lg">
+                            <h1 className="text-3xl font-bold mb-6 leading-snug">
+                                Helping you to find rest in a restless world
+                            </h1>
+                            <p className="text-lg leading-relaxed mb-6">
+                                In our overstimulated world, many of us spend our days on constant alert. The echoes of stress, both recent and old, can make slowing down feel surprisingly difficult. Yet within each of us lies the natural capacity to restore and renew.
+                                Whether you are new to yoga or seeking a gentler practice, together we can explore pathways that honor your unique needs.
+                            </p>
+                            <p className="text-lg italic">
+                                No forcing. No performance. Just the space to be exactly as you are.
+                            </p>
+                        </div>
+
+                        {/* Desktop version */}
+                        <div className="hidden sm:block">
+                            <h1 className="text-4xl font-bold mb-8 leading-snug text-center">
+                                Helping you to find rest in a restless world
+                            </h1>
+                            <p className="text-2xl leading-relaxed mb-8 text-center">
+                                In our overstimulated world, many of us spend our days on constant alert. The echoes of stress, both recent and old, can make slowing down feel surprisingly difficult - even when we are exhausted. We may carry patterns that make settling feel unfamiliar or even uncomfortable. Yet within each of us lies the natural capacity to restore and renew.
+                            </p>
+                            <p className="text-2xl leading-relaxed mb-8 text-center">
+                                Feeling tired yet wired is a complex experience that can be challenging to address alone. Whether you are new to yoga or seeking a gentler practice, together we can explore pathways that honor your unique needs.
+                            </p>
+                            <p className="text-2xl italic text-center">
+                                No forcing. No performance. Just the space to be exactly as you are.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
