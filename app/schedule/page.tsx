@@ -73,7 +73,7 @@ export default function Schedule() {
                         </div>
                     </div>
 
-                    <div className="text-center text-[#102434] italic font-bold p-4"
+                    <div className="text-center text-[#102434] italic font-bold p-4 text-xl"
                          style={{background: "linear-gradient(to right, #d3c5b8, #ffffff)"}}>
                         Coming soon: Restorative Yoga and Sound workshop
                     </div>
@@ -82,7 +82,7 @@ export default function Schedule() {
 
             {/* Image Section */}
             <div className="w-full lg:w-1/2 mt-20 lg:mt-0 px-4 lg:px-0 flex items-center justify-center">
-                <div className="w-full lg:w-[90%] aspect-square lg:aspect-auto lg:h-[90%] relative" style={{transform: 'translateY(-90px)'}}>
+                <div className="w-full lg:w-[80%] aspect-square lg:aspect-auto lg:h-[90%] relative" style={{transform: 'translateY(-90px)'}}>
                     <img
                         src="/schedule.png"
                         alt="Yoga Schedule"
