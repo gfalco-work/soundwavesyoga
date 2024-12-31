@@ -1,42 +1,42 @@
 export default function Schedule() {
     return (
-        <div className="bg-[#f7f2ed] min-h-screen flex flex-col lg:flex-row py-8 lg:py-20">
+        <div className="bg-[#f7f2ed] min-h-screen flex flex-col items-center justify-start">
             {/* Schedule Section */}
-            <div className="w-full lg:w-1/2 px-6 lg:px-12 pt-4 lg:pt-20">
+            <div className="w-full lg:w-2/3 px-6 lg:px-12 mt-4 lg:mt-10">
                 <div className="bg-white shadow-md rounded-lg overflow-hidden">
                     {/* Desktop Table - Hidden on mobile */}
                     <div className="hidden lg:block">
                         <table className="w-full border-collapse text-center text-[#102434]">
                             <thead>
                             <tr>
-                                <th colSpan={7} className="text-xl font-bold p-4 text-[#102434]"
+                                <th colSpan={7} className="text-3xl font-bold p-6 text-[#102434]"
                                     style={{background: "linear-gradient(to right, #d3c5b8, #ffffff)"}}>
                                     Weekly Yoga Schedule
                                 </th>
                             </tr>
-                            <tr className="text-base font-semibold">
+                            <tr className="text-xl font-semibold">
                                 {['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'].map(day => (
-                                    <th key={day} className="p-4 border-b border-[#d8a21e]" style={{width: "14.28%"}}>{day}</th>
+                                    <th key={day} className="p-6 border-b border-[#d8a21e]" style={{width: "14.28%"}}>{day}</th>
                                 ))}
                             </tr>
                             </thead>
                             <tbody>
-                            <tr className="text-sm">
-                                <td className="p-4 border border-[#d8a21e]"></td>
-                                <td className="p-4 border border-[#d8a21e]">
+                            <tr className="text-lg">
+                                <td className="p-6 border border-[#d8a21e]"></td>
+                                <td className="p-6 border border-[#d8a21e]">
                                     <span className="font-bold">Gentle Yoga with Sound</span><br/>
                                     Jiva Health, Wimbledon<br/>
                                     7:30 PM - 8:30 PM
                                 </td>
-                                <td className="p-4 border border-[#d8a21e]"></td>
-                                <td className="p-4 border border-[#d8a21e]">
+                                <td className="p-6 border border-[#d8a21e]"></td>
+                                <td className="p-6 border border-[#d8a21e]">
                                     <span className="font-bold">Therapeutic Yoga</span><br/>
                                     Closed Group<br/>
                                     By Appointment Only
                                 </td>
-                                <td className="p-4 border border-[#d8a21e]"></td>
-                                <td className="p-4 border border-[#d8a21e]"></td>
-                                <td className="p-4 border border-[#d8a21e]"></td>
+                                <td className="p-6 border border-[#d8a21e]"></td>
+                                <td className="p-6 border border-[#d8a21e]"></td>
+                                <td className="p-6 border border-[#d8a21e]"></td>
                             </tr>
                             </tbody>
                         </table>
@@ -52,7 +52,7 @@ export default function Schedule() {
                             {['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'].map((day) => (
                                 <div key={day} className="p-4">
                                     <h3 className="font-semibold text-[#102434] mb-2">{day}</h3>
-                                    <div className="text-sm">
+                                    <div className="text-base">
                                         {day === 'Tuesday' && (
                                             <>
                                                 <div className="font-bold">Gentle Yoga with Sound</div>
@@ -81,8 +81,8 @@ export default function Schedule() {
             </div>
 
             {/* Image Section */}
-            <div className="w-full lg:w-1/2 mt-20 lg:mt-0 px-4 lg:px-0 flex items-center justify-center">
-                <div className="w-full lg:w-[80%] aspect-square lg:aspect-auto lg:h-[90%] relative" style={{transform: 'translateY(-90px)'}}>
+            <div className="w-full lg:w-1/2 mt-8 lg:mt-10 px-4 lg:px-0 flex items-center justify-center">
+                <div className="w-full lg:w-[40%] aspect-square lg:aspect-auto lg:h-[40%] relative">
                     <img
                         src="/schedule.png"
                         alt="Yoga Schedule"
