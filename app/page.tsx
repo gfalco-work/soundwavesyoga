@@ -91,7 +91,7 @@ export default function Home() {
                                 />
                             </div>
                             <p className="italic font-bold mt-6 text-xl pb-6">
-                                "Feeling real is more than existing; it is finding a way to exist as oneself... and to have a self into which to retreat for relaxation." — D.W. Winnicott
+                                &quot;Feeling real is more than existing; it is finding a way to exist as oneself... and to have a self into which to retreat for relaxation.&quot; — D.W. Winnicott
                             </p>
                         </div>
                     </div>
