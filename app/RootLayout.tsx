@@ -15,18 +15,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <body className="antialiased">
         {/* Header Navigation */}
         <header className="bg-[#102434] text-[#fff] shadow-md sticky top-0 z-50">
-            <div className="flex items-center justify-between px-6 py-4">
-                {/* Logo and Title */}
-                <div className="flex items-center gap-4">
-                    <Link href="/" className="text-2xl sm:text-3xl font-bold text-[#fff] flex items-center gap-2">
+            <div className="flex items-center justify-between px-3 sm:px-6 py-4">
+                {/* Logo and Title - adjusted padding and gap */}
+                <div className="flex items-center gap-2 sm:gap-4 pr-4">
+                    <Link href="/" className="text-2xl sm:text-3xl font-bold text-[#fff] flex items-center gap-1 sm:gap-2">
                         <img
                             src="/logo.png"
                             alt="Sound Waves Yoga Logo"
-                            className="h-12"
+                            className="h-10 sm:h-12"
                         />
                         <span>Sound Waves Yoga</span>
                     </Link>
                 </div>
+
 
                 {/* Hamburger Menu Button (Visible only on small screens) */}
                 <button

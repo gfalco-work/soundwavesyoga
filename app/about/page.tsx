@@ -47,16 +47,11 @@ export default function AboutPage() {
                             </p>
 
                             <p className="text-xl font-bold italic text-center">
-                                “We often teach what we most need to learn.” Peter Levine
+                                &quot;We often teach what we most need to learn.&quot; Peter Levine
                             </p>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            {/* Background Image Section */}
-            <div className="absolute inset-0 -z-10">
-                <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: 'url("/aboutme.png")' }}></div>
             </div>
         </div>
     );

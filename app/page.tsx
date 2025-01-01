@@ -7,7 +7,7 @@ export default function Home() {
             <div id="highlight" className="bg-[#f7f2ed] py-10 sm:py-16">
                 <div className="container mx-auto text-center">
                     {/* Title */}
-                    <h1 className="text-3xl sm:text-5xl font-bold text-[#102434] mb-8">
+                    <h1 className="text-3xl sm:text-5xl font-bold text-[#102434] mb-8 px-2">
                         Helping You To Find Rest In A Restless World
                     </h1>
                     {/* Subtitle */}
@@ -33,7 +33,7 @@ export default function Home() {
                             </p>
                         </div>
                         <div className="bg-white shadow-lg p-6 rounded-lg">
-                            <Image src="/bowls1.png" alt="Image 3" width={500} height={300} className="rounded-md" />
+                            <Image src="/bowls.png" alt="Image 3" width={500} height={300} className="rounded-md" />
                             <h3 className="text-2xl font-bold mt-4">Sound</h3>
                             <p className="mt-2 text-lg">
                                 Bathe in sound. Sound can bypass our judging mind and barriers to rest. Helping us to
