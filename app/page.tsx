@@ -53,7 +53,7 @@ export default function Home() {
             <div className="relative bg-[#f7f2ed] pb-20 sm:pb-24 mt-6">
                 <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col sm:flex-row items-stretch min-h-[800px]">
                     {/* Left Image */}
-                    <div className="w-full sm:w-1/3 px-12 sm:px-16 flex justify-center items-center">
+                    <div className="w-full sm:w-1/3 px-12 sm:px-16 pb-5 flex justify-center items-center">
                         <Image
                             src="/sea_homepage.png"
                             alt="Sea Homepage"

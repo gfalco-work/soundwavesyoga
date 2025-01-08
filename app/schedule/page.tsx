@@ -52,7 +52,7 @@ export default function Schedule() {
                             {['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'].map((day) => (
                                 <div key={day} className="p-4">
                                     <h3 className="font-semibold text-[#102434] mb-2">{day}</h3>
-                                    <div className="text-base">
+                                    <div className="text-base text-[#102434]"> {/* Added text colour here */}
                                         {day === 'Tuesday' && (
                                             <>
                                                 <div className="font-bold">Gentle Yoga with Sound</div>

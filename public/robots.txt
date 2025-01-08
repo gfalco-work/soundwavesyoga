@@ -1,0 +1,9 @@
+# Allow all web crawlers to access everything
+User-agent: *
+Disallow:
+
+# Optional: Crawl delay to prevent server overload
+Crawl-delay: 10
+
+# Sitemap location
+Sitemap: https://www.soundwavesyoga.com/sitemap.xml
