@@ -84,9 +84,11 @@ export default function Home() {
                                 Through mindful movement, restorative holds, and beautiful sounds, you can discover your own rhythm for settling.
                             </p>
                             <div className="flex justify-center mt-5">
-                                <img
+                                <Image
                                     src="/yogawoman.png"
                                     alt="Yoga Pose"
+                                    width={500}
+                                    height={500}
                                     className="px-5 w-[200px] h-auto"
                                 />
                             </div>

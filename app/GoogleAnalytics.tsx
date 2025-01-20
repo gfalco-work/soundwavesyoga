@@ -2,7 +2,7 @@
 
 import Script from 'next/script';
 import { usePathname, useSearchParams } from 'next/navigation';
-import { useEffect } from 'react';
+import { useEffect, Suspense } from 'react';
 
 type GTagConfigParams = {
     page_path?: string;
@@ -30,7 +30,7 @@ declare global {
 
 const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_TRACKING_ID;
 
-export default function GoogleAnalytics() {
+function Analytics() {
     const pathname = usePathname();
     const searchParams = useSearchParams();
 
@@ -43,6 +43,10 @@ export default function GoogleAnalytics() {
         }
     }, [pathname, searchParams]);
 
+    return null;
+}
+
+export default function GoogleAnalytics() {
     if (!GA_TRACKING_ID) return null;
 
     return (
@@ -63,6 +67,9 @@ export default function GoogleAnalytics() {
           `,
                 }}
             />
+            <Suspense fallback={null}>
+                <Analytics />
+            </Suspense>
         </>
     );
 }

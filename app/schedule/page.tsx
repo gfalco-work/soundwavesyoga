@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Schedule() {
     return (
         <div className="bg-[#f7f2ed] min-h-screen flex flex-col items-center justify-start">
@@ -87,9 +89,11 @@ export default function Schedule() {
             {/* Image Section */}
             <div className="w-full lg:w-1/2 mt-8 lg:mt-10 px-4 lg:px-0 flex items-center justify-center">
                 <div className="w-full lg:w-[40%] aspect-square lg:aspect-auto lg:h-[40%] relative">
-                    <img
+                    <Image
                         src="/schedule.png"
                         alt="Yoga Schedule"
+                        width={500}
+                        height={500}
                         className="w-full h-full object-contain"
                     />
                 </div>

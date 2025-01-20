@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from "next/link";
 import "./globals.css";
 import GoogleAnalytics from './GoogleAnalytics';
+import Image from "next/image";
 
 // Root Layout component for client-side logic (Mobile Navigation, etc.)
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -21,10 +22,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 {/* Logo and Title - adjusted padding and gap */}
                 <div className="flex items-center gap-2 sm:gap-4 pr-4">
                     <Link href="/" className="text-2xl sm:text-3xl font-bold text-[#fff] flex items-center gap-1 sm:gap-2">
-                        <img
+                        <Image
                             src="/logo.png"
+                            width={48}
+                            height={48}
                             alt="Sound Waves Yoga Logo"
                             className="h-10 sm:h-12"
+                            priority
                         />
                         <span>Sound Waves Yoga</span>
                     </Link>

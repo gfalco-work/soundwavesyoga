@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function AboutPage() {
     return (
         <div className="min-h-screen bg-[#f7f2ed] py-12 sm:py-6 flex items-start"> {/* Change to items-start */}
@@ -6,8 +8,10 @@ export default function AboutPage() {
                     {/* Left Section: Image */}
                     <div className="w-full lg:w-1/3 flex justify-center">
                         <div className="w-85">
-                            <img
+                            <Image
                                 src="/teacher_aboutme.jpg"
+                                width={500}
+                                height={500}
                                 alt="Yoga Teacher"
                                 className="rounded-lg shadow-md w-full object-contain"
                             />
