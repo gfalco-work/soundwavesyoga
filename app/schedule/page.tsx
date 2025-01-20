@@ -36,7 +36,11 @@ export default function Schedule() {
                                 </td>
                                 <td className="p-6 border border-[#d8a21e]"></td>
                                 <td className="p-6 border border-[#d8a21e]"></td>
-                                <td className="p-6 border border-[#d8a21e]"></td>
+                                <td className="p-6 border border-[#d8a21e]">
+                                    <span className="font-bold">Gentle Yoga with Sound</span><br/>
+                                    Jiva Health, Wimbledon<br/>
+                                    3:30 PM - 4:30 PM
+                                </td>
                             </tr>
                             </tbody>
                         </table>

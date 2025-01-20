@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from "next/link";
 import "./globals.css";
+import GoogleAnalytics from './GoogleAnalytics';
 
 // Root Layout component for client-side logic (Mobile Navigation, etc.)
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -13,6 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <html lang="en">
         <body className="antialiased">
+        <GoogleAnalytics />
         {/* Header Navigation */}
         <header className="bg-[#102434] text-[#fff] shadow-md sticky top-0 z-50">
             <div className="flex items-center justify-between px-3 sm:px-6 py-4">
