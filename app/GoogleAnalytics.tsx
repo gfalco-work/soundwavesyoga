@@ -28,17 +28,19 @@ declare global {
     }
 }
 
-const GA_TRACKING_ID = process.env.GA_TRACKING_ID;
+const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_TRACKING_ID || '';
 
 function Analytics() {
     const pathname = usePathname();
     const searchParams = useSearchParams();
 
     useEffect(() => {
-        if (pathname && GA_TRACKING_ID) {
+        if (pathname && GA_TRACKING_ID && typeof window !== 'undefined') {
             const url = pathname + searchParams.toString();
             window.gtag('config', GA_TRACKING_ID, {
                 page_path: url,
+                anonymize_ip: true,
+                allow_display_features: false
             });
         }
     }, [pathname, searchParams]);
@@ -47,7 +49,15 @@ function Analytics() {
 }
 
 export default function GoogleAnalytics() {
-    if (!GA_TRACKING_ID) return null;
+    try {
+        if (!GA_TRACKING_ID) {
+            console.warn("Google Analytics tracking ID is missing.");
+            return null;
+        }
+    } catch (error) {
+        console.error("Google Analytics initialisation error:", error);
+        return null;
+    }
 
     return (
         <>
@@ -58,15 +68,18 @@ export default function GoogleAnalytics() {
             <Script
                 id="google-analytics"
                 strategy="afterInteractive"
-                dangerouslySetInnerHTML={{
-                    __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_TRACKING_ID}');
-          `,
-                }}
-            />
+            >
+                {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){window.dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', '${GA_TRACKING_ID}', {
+                        page_path: window.location.pathname,
+                        anonymize_ip: true,
+                        allow_display_features: false
+                    });
+                `}
+            </Script>
             <Suspense fallback={null}>
                 <Analytics />
             </Suspense>
