@@ -25,11 +25,7 @@ export default function Schedule() {
                             <tbody>
                             <tr className="text-lg">
                                 <td className="p-6 border border-[#d8a21e]"></td>
-                                <td className="p-6 border border-[#d8a21e]">
-                                    <span className="font-bold">Gentle Yoga with Sound</span><br/>
-                                    Jiva Health, Wimbledon<br/>
-                                    7:30 PM - 8:30 PM
-                                </td>
+                                <td className="p-6 border border-[#d8a21e]"></td>
                                 <td className="p-6 border border-[#d8a21e]"></td>
                                 <td className="p-6 border border-[#d8a21e]">
                                     <span className="font-bold">Therapeutic Yoga</span><br/>
@@ -38,11 +34,7 @@ export default function Schedule() {
                                 </td>
                                 <td className="p-6 border border-[#d8a21e]"></td>
                                 <td className="p-6 border border-[#d8a21e]"></td>
-                                <td className="p-6 border border-[#d8a21e]">
-                                    <span className="font-bold">Gentle Yoga with Sound</span><br/>
-                                    Jiva Health, Wimbledon<br/>
-                                    3:30 PM - 4:30 PM
-                                </td>
+                                <td className="p-6 border border-[#d8a21e]"></td>
                             </tr>
                             </tbody>
                         </table>
@@ -59,13 +51,6 @@ export default function Schedule() {
                                 <div key={day} className="p-4">
                                     <h3 className="font-semibold text-[#102434] mb-2">{day}</h3>
                                     <div className="text-base text-[#102434]"> {/* Added text colour here */}
-                                        {day === 'Tuesday' && (
-                                            <>
-                                                <div className="font-bold">Gentle Yoga with Sound</div>
-                                                <div>Jiva Health, Wimbledon</div>
-                                                <div>7:30 PM - 8:30 PM</div>
-                                            </>
-                                        )}
                                         {day === 'Thursday' && (
                                             <>
                                                 <div className="font-bold">Therapeutic Yoga</div>
@@ -81,7 +66,7 @@ export default function Schedule() {
 
                     <div className="text-center text-[#102434] italic font-bold p-4 text-xl"
                          style={{background: "linear-gradient(to right, #d3c5b8, #ffffff)"}}>
-                        Coming soon: Restorative Yoga and Sound workshop
+                        Coming soon: Soundbath Phoenix Yoga, Putney - Sunday 27th April 4pm - 5:30
                     </div>
                 </div>
             </div>
