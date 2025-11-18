@@ -1,4 +1,10 @@
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Schedule - Book Yoga & Soundbath with Michelle Butterly | Sound Waves Yoga",
+    description: "Book therapeutic yoga classes and soundbath sessions with Michelle Butterly in Putney, London. View schedule and book online.",
+};
 
 export default function AboutPage() {
     return (

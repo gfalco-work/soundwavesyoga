@@ -1,4 +1,7 @@
+'use client';
+
 import Image from "next/image";
+import { useState } from 'react';
 
 export default function Schedule() {
     return (
@@ -82,6 +85,83 @@ export default function Schedule() {
                         className="w-full h-full object-contain"
                     />
                 </div>
+            </div>
+            {/* Payment Section - Add this before the final closing div */}
+            <div className="w-full lg:w-2/3 px-6 lg:px-12 mt-8 mb-8">
+                <PaymentForm />
+            </div>
+        </div>
+    );
+}
+
+function PaymentForm() {
+    const [loading, setLoading] = useState(false);
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+
+    const handleCheckout = async () => {
+        if (!name || !email) {
+            alert('Please enter your name and email');
+            return;
+        }
+
+        setLoading(true);
+
+        try {
+            const response = await fetch('/api/checkout', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    amount: 0.30,
+                    eventName: 'Soundbath Phoenix Yoga - Test',
+                    email,
+                    name,
+                }),
+            });
+
+            const { url } = await response.json();
+            window.location.href = url;
+        } catch (error) {
+            console.error('Payment error:', error);
+            alert('Payment failed. Please try again.');
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    return (
+        <div className="bg-white shadow-lg rounded-lg p-8 max-w-md mx-auto">
+            <h3 className="text-2xl font-bold text-[#102434] mb-2 text-center">Book Your Spot</h3>
+            <p className="text-center text-gray-600 mb-6">Soundbath Phoenix Yoga, Putney</p>
+            <div className="space-y-4">
+                <div>
+                    <label className="block text-sm font-medium text-[#102434] mb-1">Name</label>
+                    <input
+                        type="text"
+                        placeholder="Enter your name"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        className="w-full p-3 border-2 border-gray-300 rounded-lg focus:border-[#d8a21e] focus:outline-none text-[#102434]"
+                    />
+                </div>
+                <div>
+                    <label className="block text-sm font-medium text-[#102434] mb-1">Email</label>
+                    <input
+                        type="email"
+                        placeholder="Enter your email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        className="w-full p-3 border-2 border-gray-300 rounded-lg focus:border-[#d8a21e] focus:outline-none text-[#102434]"
+                    />
+                </div>
+                <button
+                    onClick={handleCheckout}
+                    disabled={loading}
+                    className="w-full bg-[#d8a21e] text-white py-4 rounded-lg font-bold text-lg hover:bg-[#c49119] disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-md hover:shadow-lg"
+                >
+                    {loading ? 'Processing...' : 'Pay £0.30 (Test)'}
+                </button>
+                <p className="text-xs text-gray-500 text-center">Secure payment powered by Stripe</p>
             </div>
         </div>
     );

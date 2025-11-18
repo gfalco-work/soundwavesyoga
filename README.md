@@ -28,9 +28,27 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ 
+## Test payment
 
-## Deploy on Vercel
+```
+brew install stripe/stripe-cli/stripe
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To run the Stripe CLI and forward webhook events to your local server, use the following command:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+stripe listen --forward-to localhost:3000/api/webhook
+```
+
+And update the `STRIPE_WEBHOOK_SECRET` in your `.env.local` file with the webhook secret provided by the Stripe CLI after running the above command.
+
+
+### SEO 
+
+Submit your sitemap to Google:
+
+Go to https://search.google.com/search-console
+Add your property: www.soundwavesyoga.com
+Submit sitemap: https://www.soundwavesyoga.com/sitemap.xml
+

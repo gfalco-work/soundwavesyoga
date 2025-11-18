@@ -8,13 +8,12 @@ import Image from "next/image";
 import {Transition} from '@headlessui/react';
 
 // Root Layout component for client-side logic (Mobile Navigation, etc.)
-export default function RootLayout({children}: { children: React.ReactNode }) {
+export default function ClientLayout({children}: { children: React.ReactNode }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const currentYear = new Date().getFullYear();
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
     return (
-        <html lang="en">
         <body className="antialiased">
         <GoogleAnalytics/>
         {/* Header Navigation */}
@@ -135,6 +134,5 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
             </p>
         </footer>
         </body>
-        </html>
     );
 }
